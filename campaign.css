@@ -1,0 +1,179 @@
+.logo{
+    display: flex;
+    font-size: 25px;
+    font-weight: 800;
+    color:rgb(114, 229, 191);
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 5px;
+}
+b{
+    font-size: 70px;
+    color: #b961ae;
+}
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 60px;
+    line-height: 60px;
+    z-index: 111;
+    background-color: white;
+}
+
+.navItems{
+    display: flex;
+}
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navItems li a{
+    font-size: 15px;
+    color:rgb(114, 229, 191);
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 10px;
+    white-space: nowrap;
+}
+.navItems li:hover a{
+    color:aquamarine;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: #b961ae;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:#e3f7e7;
+}
+.row{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card{ 
+	background: #ACE5BB;
+	position: relative;
+	flex: 1;
+	max-width: 580px;
+	min-height: 54vh;
+	margin: 20px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background:#9CEEC0;
+    color:#299073;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 500;
+    margin: auto;
+}
+
+.theback{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background:#EFE9E4;
+    color:#847059;
+    transform: rotateY(180deg);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.back2{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background:#9CEEC0;
+    transform: rotateY(180deg);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.wrapper1{
+    margin-left: 25px;
+    margin-top: 2px;
+    padding: 10px;
+    max-width: 290px;
+    max-height: 94%;
+    background-color: #DDD7D2;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.btn1{
+    background-color:#DDD7D2;
+    border: 0px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+}
+
+.btn1 a{
+    text-decoration: none;
+    color: #8D3535;
+}
+
+.btn2{
+    background-color:#299073;
+    border: 0px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+}
+
+.btn2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.shape{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1100px){
+    .card{
+        min-height: 55vh;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 1000px){
+    .card{
+        min-height: 25vh;
+        max-width: 650px;
+    }
+    .nav{
+        padding: 15px;
+      }
+      .navItems li a{
+        font-size: 20px;
+      }
+      .logo{
+        font-size: 2rem;
+      }
+}

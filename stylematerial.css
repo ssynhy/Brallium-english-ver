@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b961ae;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #c4efd0;
+}
+
+
+/* Button */
+button {
+    border: none;
+    background-color: transparent;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color:cadetblue;
+}
+
+i {
+    color: cadetblue;
+    font-size: 4em;
+}
+
+/* Book */
+.book {
+    width: 350px;
+    height: 500px;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.paper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+.front {
+    backface-visibility: hidden;
+    border-left: 3px solid #b961ae;
+}
+
+.front, 
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg);
+}
+
+.component{
+    width: 90%;
+}
+
+.diary{
+    width: 100%;
+}
+
+.smell{
+    width: 95%;
+}
+
+.lastpage{
+    height: 90%;
+    width: 100%;
+}
+
+.btn{
+    background-color:aquamarine;
+    width: 300px;
+    font-size: 19px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    border: 3px solid #b961ae;
+}
+
+.btn a{
+    text-decoration: none;
+}
+
+
+/* Paper Flipped */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg)
+}
+
+/* Paper Z-index */
+#p1 {
+    z-index: 4;
+}
+
+#p2 {
+    z-index: 3;
+}
+
+#p3 {
+    z-index: 2;
+}
+
+#p4 {
+    z-index: 1;
+}
+
+/* Customization */
+
+.book-title {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature1{
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+}
+
+.feature2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#b1 {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    justify-content: space-around;
+}
+
+#b1 h2 {
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#b1 p {
+    margin-bottom: 20px;
+}
+.notion{
+    margin-top: 450px;
+    margin-right: 15px;
+}

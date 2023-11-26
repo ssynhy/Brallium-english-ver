@@ -1,0 +1,182 @@
+.logo{
+    display: flex;
+    font-size: 25px;
+    font-weight: 800;
+    color:rgb(149, 240, 210);
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 5px;
+}
+b{
+    font-size: 70px;
+    color: #b961ae;
+}
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+.nav{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  height: 60px;
+  line-height: 60px;
+  z-index: 111;
+}
+
+.navItems{
+    display: flex;
+}
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navItems li a{
+    font-size: 15px;
+    color:rgb(149, 240, 210);
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin: 10px;
+    white-space: nowrap;
+}
+.navItems li:hover a{
+    color:aquamarine;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color:purple;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #edf9f0;
+}
+section{
+    padding: 4rem 0 3rem;
+}
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #d1b0cc;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid #d1b0cc;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color:rgb(149, 240, 210);
+    color: purple;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .btn:hover {
+    background-color: purple;
+    color: white;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  img{
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 1000px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+    .nav{
+      padding: 15px;
+    }
+    .navItems li a{
+      font-size: 20px;
+    }
+    .logo{
+      font-size: 2rem;
+    }
+    .container{
+      min-height: 48vh;
+      max-width: 850px;
+      font-size: 25px;
+    }
+    .btn{
+      font-size: 21px;
+      margin-top: 30px;
+    }
+    label{
+      font-size: 23px;
+      margin-top: 20px;
+    }
+    ::placeholder{
+      font-size: 18px;
+    }
+    .next{
+      font-size: 18px;
+    }
+  }
